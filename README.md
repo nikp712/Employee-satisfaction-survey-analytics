@@ -1,57 +1,131 @@
-# Employee Satisfaction Survey Analytics
+# Employee Work Years & Promotion Readiness Analysis
 Analysis of employee satisfaction survey data using R
 
-## Objective
-This project analyzes results from the IntelliAuto Employee Satisfaction Survey to explore job advancement perceptions and factors influencing employee tenure. The aim is to uncover insights to guide HR management in workforce transition and retention strategies.
+## Table of Contents
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Data Summary](#data-summary)
+4. [Preprocessing Steps](#preprocessing-steps)
+5. [Visualizations](#visualizations)
+6. [Predictive Analytics](#predictive-analytics)
+7. [Key Insights](#key-insights)
+8. [How to Run the Project](#how-to-run-the-project)
+9. [Results](#results)
+10. [Future Improvements](#future-improvements)
+11. [Acknowledgments](#acknowledgments)
+12. [Author](#author)
 
-## Dataset
-- **File:** `ISYS3446_A2_IntelliAuto.xlsx`
-- **Description:** Contains employee demographic data (age, gender, occupation), work history (years worked, rich work experience), and survey responses (likelihood of promotion, etc.).
+---
 
-## Methodology
+## Overview
+This project analyzes workforce data to explore trends in years worked, occupation, gender, and likelihood of promotion. The analysis is performed in R and covers data cleaning, visualization, and basic regression modelling.
 
-1. **Data Preprocessing**
-   - Import and clean the data (remove missing values, convert categorical variables to factors, group ages).
-2. **Exploratory Data Analysis (EDA)**
-   - Summary statistics for all variables.
-   - Visualize key relationships (e.g., promotion likelihood by gender and age group, work years by occupation).
-3. **Predictive Analytics**
-   - Build a linear regression model to predict years of employment based on age, gender, occupation, and work experience.
-   - Evaluate model performance.
-4. **Outlier Detection**
-   - Identify employees with unusually high or low years worked.
+---
 
-## Key Visualizations
+## Features
+- **Data Cleaning:** Handles missing values and data types for robust analysis.
+- **Statistical Summaries:** Quick stats and outlier checks for years worked.
+- **Visual Analytics:** Boxplots, scatterplots, and group summaries for clear workforce insights.
+- **Predictive Analytics:** Linear regression modelling to predict years worked from demographic and job-related features.
 
-### 1. Job Advancement Perceptions by Gender and Age Group
-![Job Advancement Boxplot](job_advancement_boxplot.png)
+---
+
+## Data Summary
+- **Dataset:** Employee records from `ISYS3446_A2_IntelliAuto.xlsx`
+- **Main Columns:**
+    - `Occupn` (Occupation), `Age`, `WrkYears`, `RichWork`, `Sex`, `FutPromo` (Likelihood of Promotion)
+
+---
+
+## Preprocessing Steps
+1. Imported the data into R.
+2. Selected relevant columns for analysis.
+3. Removed rows with missing values (`na.omit`).
+4. Converted categorical columns (`Sex`, `Occupn`, `RichWork`) to factors.
+5. Binned `Age` into `AgeGroup` for visualizations.
+
+---
+
+## Visualizations
+
+### 1. Job Advancement Perceptions
+Boxplot showing the likelihood of promotion by age and gender.
+
+![image](https://github.com/user-attachments/assets/2e95b525-32a3-4d31-a50e-24aa1213b55f)
+
+---
 
 ### 2. Work Years by Occupation
-![Work Years by Occupation](work_years_by_occupation.png)
+Colour Boxplot displaying years worked across occupations.
 
-### 3. Age vs. Years Worked Scatterplot
-![Scatterplot Age vs Work Years](scatterplot_age_workyears.png)
+![image](https://github.com/user-attachments/assets/81d56b2e-0091-44cc-809b-19ba42970c3f)
 
-## Results
+---
 
-- **Gender and Age:** Gender and age group both show clear patterns in perceived promotion likelihood.
-- **Occupation:** Years worked varies significantly across different occupations.
-- **Regression Model:** Age, gender, occupation, and “rich work” experience are all significant predictors of years worked.
-- **Outliers:** Several employees have tenure outside the typical range; these cases may merit further HR review.
+### 3. Age and Work Years
+Colour Scatterplot 
 
-## How to Reproduce
+![image](https://github.com/user-attachments/assets/8da437ad-a07b-4802-a424-6a4485dc9925)
+
+---
+
+## Predictive Analytics
+
+A linear regression predicts years worked based on age, occupation, rich work experience, and sex.
+
+A table of actual vs. predicted work years and residual error is generated for review.
+
+---
+
+## Key Insights
+- Years worked varies significantly by occupation.
+- Gender and rich work experience play roles in promotion likelihood.
+- Age and occupation are significant predictors for total work years.
+- Outliers in years worked were detected for further review.
+
+---
+
+## How to Run the Project
 
 1. Clone or download this repository.
-2. Place `ISYS3446_A2_IntelliAuto.xlsx` in your working directory.
-3. Run `analysis.R` (see the provided R script).
-4. All results and plots will be generated automatically.
+2. Make sure R and RStudio are installed ([Download R](https://cran.r-project.org/), [Download RStudio](https://posit.co/download/rstudio-desktop/)).
+3. Open the analysis script in RStudio.
+4. Install dependencies by running:
+    ```r
+    install.packages("ggplot2")
+    install.packages("dplyr")
+    ```
+5. Load the dataset with the same name as in the script.
+6. Run the code blocks to generate visualizations and regression results.
 
-## Recommendations
+---
 
-- Leverage demographic and work experience insights to design tailored retention strategies.
-- Investigate outlier cases for best practices or risk factors.
+**Note:**  
+- Adjust the file path for `ISYS3446_A2_IntelliAuto.xlsx` if your data is in a different folder.
+- Save your generated plots with the suggested filenames for easy reference in this README.
 
-## License
+---
 
-This project is for educational purposes only.  
-Author: [Your Name]
+## Results
+- Visualizations and regression summary output as expected.
+- Outlier values in years worked are listed for managerial review.
+
+---
+
+## Future Improvements
+- Expand regression analysis (add interaction terms, test other predictors).
+- Create dashboards for HR management.
+- Add more advanced machine learning for promotion prediction.
+
+---
+
+## Acknowledgments
+- Dataset: RMIT University course ISYS3446.
+- Libraries: `ggplot2`, `dplyr`.
+
+---
+
+## Author
+
+**Nhi Phan** | RMIT University  
+Final year student, Bachelor of Business Information Systems (Expected November 2025)
