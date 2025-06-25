@@ -1,4 +1,4 @@
-# Employee Work Years & Promotion Readiness Analysis
+# Employee Work Years and Promotion Readiness Analysis
 Analysis of employee satisfaction survey data using R
 
 ## Table of Contents
@@ -101,7 +101,7 @@ A table of actual vs. predicted work years and residual error is generated for r
 ---
 
 **Note:**  
-If your code reads a file like ISYS3446_A2_IntelliAuto.xlsx, ensure that the file is included in your repo and the path is set correctly in the script (e.g., "./ISYS3446_A2_IntelliAuto.xlsx").
+If your code reads a file like `ISYS3446_A2_IntelliAuto.xlsx`, ensure that the file is included in your repo and the path is set correctly in the script (e.g., `./ISYS3446_A2_IntelliAuto.xlsx`).
 If you have a specific folder structure, mention where to put the data.
 
 ---
