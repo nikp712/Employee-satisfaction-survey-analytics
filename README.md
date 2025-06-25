@@ -78,9 +78,9 @@ A table of actual vs. predicted work years and residual error is generated for r
 ---
 
 ## Key Insights
-- Years worked varies significantly by occupation.
+- Years worked vary significantly by occupation.
 - Gender and rich work experience play roles in promotion likelihood.
-- Age and occupation are significant predictors for total work years.
+- Age and occupation are significant predictors of total work years.
 - Outliers in years worked were detected for further review.
 
 ---
@@ -101,13 +101,13 @@ A table of actual vs. predicted work years and residual error is generated for r
 ---
 
 **Note:**  
-- Adjust the file path for `ISYS3446_A2_IntelliAuto.xlsx` if your data is in a different folder.
-- Save your generated plots with the suggested filenames for easy reference in this README.
+If your code reads a file like ISYS3446_A2_IntelliAuto.xlsx, ensure that the file is included in your repo and the path is set correctly in the script (e.g., "./ISYS3446_A2_IntelliAuto.xlsx").
+If you have a specific folder structure, mention where to put the data.
 
 ---
 
 ## Results
-- Visualizations and regression summary output as expected.
+- Visualizations and regression summary output are expected.
 - Outlier values in years worked are listed for managerial review.
 
 ---
