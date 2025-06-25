@@ -127,5 +127,5 @@ If you have a specific folder structure, mention where to put the data.
 
 ## Author
 
-**Nhi Phan** | RMIT University  
+**Nik Phan** | RMIT University  
 Final year student, Bachelor of Business Information Systems (Expected November 2025)
