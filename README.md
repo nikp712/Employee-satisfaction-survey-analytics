@@ -89,14 +89,14 @@ A table of actual vs. predicted work years and residual error is generated for r
 
 1. Clone or download this repository.
 2. Make sure R and RStudio are installed ([Download R](https://cran.r-project.org/), [Download RStudio](https://posit.co/download/rstudio-desktop/)).
-3. Open the analysis script in RStudio.
+3. Open `Employee-satisfaction-survey-analytics.R` in RStudio.
 4. Install dependencies by running:
     ```r
-    install.packages("ggplot2")
     install.packages("dplyr")
+    install.packages("ggplot2")
     ```
-5. Load the dataset with the same name as in the script.
-6. Run the code blocks to generate visualizations and regression results.
+5. Run all code chunks, or click **Knit** if using the R Markdown version.
+6. View the plots and summary results in the output or saved images.
 
 ---
 
