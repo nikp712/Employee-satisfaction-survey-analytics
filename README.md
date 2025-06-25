@@ -63,7 +63,7 @@ Colour Boxplot displaying years worked across occupations.
 ---
 
 ### 3. Age and Work Years
-Colour Scatterplot 
+Colour Scatterplot highlighting the colour code for each occupation by age and work years.
 
 ![image](https://github.com/user-attachments/assets/8da437ad-a07b-4802-a424-6a4485dc9925)
 
