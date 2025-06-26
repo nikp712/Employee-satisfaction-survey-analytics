@@ -161,7 +161,7 @@ If you have a specific folder structure, mention where to put the data.
 ---
 
 ## Acknowledgments
-- Dataset: RMIT University course ISYS3446.
+- Dataset: RMIT University.
 - Libraries: `ggplot2`, `dplyr`.
 
 ---
