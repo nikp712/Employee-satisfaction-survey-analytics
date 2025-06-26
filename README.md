@@ -51,6 +51,19 @@ This project analyzes workforce data to explore trends in years worked, occupati
 ### 1. Job Advancement Perceptions
 Boxplot showing the likelihood of promotion by age and gender.
 
+Code:
+```bash
+ggplot(df, aes(x = Age, y = FutPromo, fill = Sex)) +
+  geom_boxplot() +
+  labs(
+    x = "Age Group",
+    y = "Likelihood of Promotion",
+    fill = "Gender",
+    title = "Job Advancement Perceptions by Gender and Age Group"
+  ) +
+  theme_classic()
+```
+
 ![image](https://github.com/user-attachments/assets/2e95b525-32a3-4d31-a50e-24aa1213b55f)
 
 ---
@@ -58,12 +71,40 @@ Boxplot showing the likelihood of promotion by age and gender.
 ### 2. Work Years by Occupation
 Colour Boxplot displaying years worked across occupations.
 
+Code:
+```bash
+ggplot(df, aes(x = Occupn, y = WrkYears, fill = Occupn)) +
+  geom_boxplot() +
+  scale_fill_brewer(palette = "Pastel1") +  # Try "Set2", "Dark2", etc.
+  labs(
+    y = "Years Worked",
+    x = "Occupation",
+    fill = "Occupn",
+    title = "Work Years by Occupation"
+  ) +
+  theme_minimal()
+```
+
 ![image](https://github.com/user-attachments/assets/81d56b2e-0091-44cc-809b-19ba42970c3f)
 
 ---
 
 ### 3. Age and Work Years
 Colour Scatterplot highlighting the colour code for each occupation by age and work years.
+
+Code:
+```bash
+ggplot(df, aes(x = Age, y = WrkYears, color = Occupn)) +
+  geom_point(size = 2, alpha = 0.7) +
+  scale_color_brewer(palette = "Set1") +
+  labs(
+    x = "Age",
+    y = "Years Worked",
+    color = "Occupation",
+    title = "Age and Years Worked"
+  ) +
+  theme_light()
+```
 
 ![image](https://github.com/user-attachments/assets/8da437ad-a07b-4802-a424-6a4485dc9925)
 
